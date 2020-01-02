@@ -1,0 +1,61 @@
+/*
+farger: 
+
+gb: rgb(221, 207, 246)
+gb mørk: rgb(189, 161, 247)
+tekst: rgb(128, 100, 198)
+tekst: rgb(90, 61, 171)
+tekst blå: rgb(150, 215, 247)
+
+*/
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+a {
+  text-decoration-color: rgba(235, 0, 255, 0);
+  color: inherit;
+  color: rgb(235, 0, 255);
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration-color: rgba(235, 0, 255, 255);
+  transition: 0.5s;
+}
+
+code {
+  font-family: menlo, inconsolata, monospace;
+  font-size: calc(1em - 2px);
+  color: #555;
+  background-color: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
+  }
+}
