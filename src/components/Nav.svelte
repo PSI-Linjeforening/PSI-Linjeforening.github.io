@@ -4,14 +4,21 @@
 
 <style>
   nav {
-    border-bottom: 1px solid rgba(235, 0, 255, 0.1);
     font-weight: 300;
     padding: 0 1em;
+    padding-bottom: 3em;
+    overflow: hidden;
+    background-color: blueviolet;
+    background: linear-gradient(rgb(159, 43, 226) 20%, rgb(207, 77, 207));
+    clip-path: ellipse(60% 80% at 50% 20%);
   }
 
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
   }
 
   /* clearfix */
@@ -23,7 +30,7 @@
 
   li {
     display: block;
-    float: left;
+    text-transform: uppercase;
   }
 
   .selected {
@@ -36,7 +43,7 @@
     content: "";
     width: calc(100% - 1em);
     height: 2px;
-    background-color: rgb(235, 0, 255);
+    background-color: rgb(214, 83, 226);
     display: block;
     bottom: -1px;
   }
@@ -45,6 +52,9 @@
     text-decoration: none;
     padding: 1em 0.5em;
     display: block;
+    font-size: 1.5em;
+    padding-bottom: 0;
+    color: ivory;
   }
 </style>
 
@@ -63,6 +73,11 @@
     </li>
     <li>
       <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
+    </li>
+    <li>
+      <a rel="prefetch" class:selected={segment === 'andre'} href="andre">
+        andre
+      </a>
     </li>
   </ul>
 </nav>
