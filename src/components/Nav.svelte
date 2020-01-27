@@ -65,6 +65,12 @@
 		display: block;
 		bottom: -1px;
 	}
+
+	@media (max-width: 800px) {
+		nav {
+			padding-bottom: 1.5em;
+		}
+	}
 </style>
 
 <nav>
