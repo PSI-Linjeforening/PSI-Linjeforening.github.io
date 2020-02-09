@@ -76,7 +76,10 @@
 </div>
 
 <p>
-	<strong>Velommen til PSI, linjeforeningen for psykologi.</strong>
+	<strong>
+		Velommen til PSI, linjeforeningen for psykologi årsstudium og bachelor
+		ved NTNU.
+	</strong>
 </p>
 <p>
 	<a href="om">Om oss &#8594</a>

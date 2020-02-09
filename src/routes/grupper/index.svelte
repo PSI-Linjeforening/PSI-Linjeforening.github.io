@@ -1,5 +1,9 @@
 <script>
 	export const groups = ["Psykopatur", "PSIng"];
+
+	import Sing from "svelte-icons/gi/GiSing.svelte";
+	import Hiking from "svelte-icons/fa/FaHiking.svelte";
+	import Icon from "../../components/Icon.svelte";
 </script>
 
 <style>
@@ -12,12 +16,22 @@
 <svelte:head>
 	<title>Grupper</title>
 </svelte:head>
-<h1>Grupper</h1>
+<h1>Grupper:</h1>
 
-<ul>
-	{#each groups as group}
-		<li>
-			<a rel="prefetch" href="grupper/{group.toLowerCase()}">{group}</a>
-		</li>
-	{/each}
-</ul>
+<a href="grupper/psykopatur">
+	<h3>
+		Psykopatur
+		<Icon>
+			<Hiking />
+		</Icon>
+	</h3>
+</a>
+
+<a href="grupper/psing">
+	<h3>
+		PSIng
+		<Icon>
+			<Sing />
+		</Icon>
+	</h3>
+</a>
