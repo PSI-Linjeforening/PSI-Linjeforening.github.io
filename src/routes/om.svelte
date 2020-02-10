@@ -79,9 +79,16 @@
 
 <h2>Kontakt Oss:</h2>
 <p>
+	<a class="icon" href="https://www.facebook.com/psi.linjeforening/">
+		<Facebook title="PSI på Facebook" />
+		PSI Facebook
+	</a>
+</p>
+
+<p>
 	<a class="icon" href="https://m.me/psi.linjeforening">
 		<Messenger title="PSI på Messenger" />
-		PSI
+		PSI Messenger
 	</a>
 </p>
 

@@ -21,7 +21,9 @@
 <p>
 	Følg oss på Facebook for oppdateringer og aktiviteter:
 	<br />
-	<a class="icon big" href="https://www.facebook.com/groups/400303520423813/">
+	<a
+		class="icon big"
+		href="https://www.facebook.com/groups/184644652304879/?source_id=718747041542674">
 		<Facebook title="PSing på Facebook" />
 	</a>
 </p>
