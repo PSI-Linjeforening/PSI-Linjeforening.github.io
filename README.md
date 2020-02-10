@@ -43,18 +43,17 @@ Example to include a icon inline text:
 	// Where collection code is the same two first letter of the icon-name, just in lower case.
 	// Lets call our import Messenger for simpler use later
 	import Messenger from "svelte-icons/fa/FaFacebookMessenger.svelte";
-	import Icon from "../components/AIcon.svelte";
 </script>
 
 <!-- Link Wrapper -->
 <a href="https://m.me/psi.linjeforening">
 	<!-- Include icon in paragraph to make them same line and size -->
 	<p>
-		<!-- An icon wrapper to easilly include icons -->
-		<Icon>
+		<!-- Use the icon class for icon wrappers. You can combine them with big or medium-big to increese the icon size. -->
+		<span class="icon">
 			<!-- Our imported messenger icon -->
 			<Messenger />
-		</Icon>
+		</span>
 		<!-- Text that continues on the same line -->
 		Messenger PSI
 	</p>
@@ -67,22 +66,15 @@ Example of a big clickable link icon:
 ```html
 <script>
 	import Facebook from "svelte-icons/io/IoLogoFacebook.svelte";
-	import AIcon from "../components/AIcon.svelte";
 </script>
 
 <p>
 	Følg oss på Facebook for oppdateringer og aktiviteter:
 	<br />
 	<!--- A icon wrapper which also makes the icon a link/anchor -->
-	<AIcon size="3em" href="https://www.facebook.com/groups/400303520423813/">
+	<a class="icon big" href="https://www.facebook.com/groups/400303520423813/">
 		<!--- Our Facebook icon -->
 		<Facebook />
-	</AIcon>
+	</a>
 </p>
 ```
-
-The Icon wrapper component takes one (optional) property, `size`, which is a CSS value (default to `1em`, same size as current line of text).
-
-The AIcon wrapper component takes two properties:
-`size` (optional), same as Icon.
-`href` (mandatory), where to link to.
