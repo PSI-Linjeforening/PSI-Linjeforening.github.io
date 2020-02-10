@@ -1,24 +1,14 @@
 <script>
 	import Facebook from "svelte-icons/io/IoLogoFacebook.svelte";
 	import Hiking from "svelte-icons/fa/FaHiking.svelte";
-	import AIcon from "../../components/AIcon.svelte";
-	import Icon from "../../components/Icon.svelte";
 </script>
-
-<style>
-	h3 {
-		margin: 0.5em 0;
-	}
-</style>
 
 <svelte:head>
 	<title>Psykopatur</title>
 </svelte:head>
-<h1>
+<h1 class="icon">
 	Psykopatur
-	<Icon>
-		<Hiking />
-	</Icon>
+	<Hiking />
 </h1>
 
 <p>
@@ -31,18 +21,7 @@
 <p>
 	Følg oss på Facebook for oppdateringer og aktiviteter:
 	<br />
-	<AIcon size="3em" href="https://www.facebook.com/groups/400303520423813/">
-		<Facebook />
-	</AIcon>
+	<a class="icon big" href="https://www.facebook.com/groups/400303520423813/">
+		<Facebook title="Psykopatur på Facebook" />
+	</a>
 </p>
-<p />
-
-<h3>AKTIVITETSKOMITÈEN:</h3>
-<ul>
-	<li>Anna Viktoria Hellevang (aktivitetsansvarlig)</li>
-	<li>Mathias Skjæran Landrø</li>
-	<li>Sondre Abrahamsen</li>
-	<li>Kristine Olsøy</li>
-	<li>Hanna Hole Kjøsen</li>
-	<li>Stian Søreng</li>
-</ul>

@@ -1,18 +1,15 @@
 <script>
 	import Facebook from "svelte-icons/io/IoLogoFacebook.svelte";
 	import Sing from "svelte-icons/gi/GiSing.svelte";
-	import Icon from "../../components/Icon.svelte";
-	import AIcon from "../../components/AIcon.svelte";
 </script>
 
 <svelte:head>
 	<title>PSing</title>
 </svelte:head>
-<h1>
+
+<h1 class="icon">
 	PSing
-	<Icon>
-		<Sing />
-	</Icon>
+	<Sing />
 </h1>
 
 <p>
@@ -24,7 +21,7 @@
 <p>
 	Følg oss på Facebook for oppdateringer og aktiviteter:
 	<br />
-	<AIcon size="3em" href="https://www.facebook.com/groups/400303520423813/">
-		<Facebook />
-	</AIcon>
+	<a class="icon big" href="https://www.facebook.com/groups/400303520423813/">
+		<Facebook title="PSing på Facebook" />
+	</a>
 </p>

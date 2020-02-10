@@ -4,11 +4,15 @@
 
 <style>
 	nav {
-		font-weight: 300;
+		font-weight: 350;
 		padding: 0 1em;
 		padding-bottom: 3em;
 		background-color: rgb(159, 43, 226);
-		background: linear-gradient(rgb(159, 43, 226) 20%, rgb(207, 77, 207));
+		background: linear-gradient(
+				rgba(159, 43, 226, 0.9) 20%,
+				rgba(207, 77, 207, 0.9)
+			),
+			center center / 105vw no-repeat url("/images/brain-mono.png");
 		clip-path: ellipse(60% 80% at 50% 20%);
 		-webkit-clip-path: ellipse(60% 80% at 50% 20%);
 	}
@@ -26,44 +30,22 @@
 		text-transform: uppercase;
 	}
 
-	.selected {
+	a {
+		margin: 1em 0.5em 0 0.5em;
+		display: block;
+		font-size: 1.5em;
+		color: ivory;
 		position: relative;
-		display: inline-block;
+	}
+
+	a::after,
+	.selected::after {
+		height: 2px;
+		background-color: rgba(255, 255, 255, 0.5);
 	}
 
 	.selected::after {
-		position: absolute;
-		content: "";
-		width: calc(100% - 1em);
-		height: 2px;
 		background-color: rgb(214, 83, 226);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-		font-size: 1.5em;
-		padding-bottom: 0;
-		color: ivory;
-		border-radius: 3px;
-	}
-
-	a:hover {
-		position: relative;
-		display: inline-block;
-	}
-
-	a:not(.selected):hover::after {
-		position: absolute;
-		content: "";
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgba(255, 255, 255, 0.5);
-		display: block;
-		bottom: -1px;
 	}
 
 	@media (max-width: 800px) {

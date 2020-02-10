@@ -3,35 +3,33 @@
 
 	import Sing from "svelte-icons/gi/GiSing.svelte";
 	import Hiking from "svelte-icons/fa/FaHiking.svelte";
-	import Icon from "../../components/Icon.svelte";
+	import Facebook from "svelte-icons/io/IoLogoFacebook.svelte";
+	import Camera from "svelte-icons/fa/FaCameraRetro.svelte";
 </script>
-
-<style>
-	ul {
-		margin: 0 0 1em 0;
-		line-height: 1.5;
-	}
-</style>
 
 <svelte:head>
 	<title>Grupper</title>
 </svelte:head>
+
 <h1>Grupper:</h1>
 
-<a href="grupper/psykopatur">
-	<h3>
+<h3>
+	<a class="icon" href="grupper/psykopatur">
+		<Hiking />
 		Psykopatur
-		<Icon>
-			<Hiking />
-		</Icon>
-	</h3>
-</a>
+	</a>
+</h3>
 
-<a href="grupper/psing">
-	<h3>
+<h3>
+	<a class="icon" href="grupper/psing">
+		<Sing />
 		PSIng
-		<Icon>
-			<Sing />
-		</Icon>
-	</h3>
-</a>
+	</a>
+</h3>
+
+<h3>
+	<a class="icon" href="grupper/pr">
+		<Camera />
+		PR
+	</a>
+</h3>
