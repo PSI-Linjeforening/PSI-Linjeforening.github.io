@@ -1,21 +1,18 @@
-/*
-farger: 
-
-gb: rgb(221, 207, 246)
-gb mørk: rgb(189, 161, 247)
-tekst: rgb(128, 100, 198)
-tekst: rgb(90, 61, 171)
-tekst blå: rgb(150, 215, 247)
-
-*/
 body {
 	margin: 0;
-	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #333;
 	font-weight: 300;
+	background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+		center -100px / 100% no-repeat url("/images/rorschach-mono.png");
+}
+
+*:focus {
+	outline: none;
+	box-shadow: 0 0 5px 1px rgba(80, 255, 255, 0.5);
 }
 
 h1,
@@ -24,44 +21,95 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0 0 0.5em 0;
+	margin: 0.2em 0 0.2em 0;
 	font-weight: 400;
 	line-height: 1.2;
 }
 
-h1 {
-	font-size: 2em;
+ul {
+	margin: 0;
 }
 
 a {
-	text-decoration-color: rgba(235, 0, 255, 0);
-	color: inherit;
+	text-decoration: none;
 	color: rgb(207, 77, 207);
-	transition: text-decoration-color 0.3s;
+	position: relative;
 }
 
-a:hover {
-	text-decoration-color: rgba(235, 0, 255, 255);
-	transition: text-decoration-color 0.5s;
+p {
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
 }
 
-code {
-	font-family: menlo, inconsolata, monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
+a::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: rgba(214, 83, 226, 0);
+	margin: auto;
+	display: block;
+	bottom: -1px;
+	clip-path: inset(0 50%);
+	-webkit-clip-path: inset(0 50%);
+	transition: 0.5s;
 }
 
-@media (min-width: 400px) {
+a:hover::after,
+a.selected::after {
+	background-color: rgba(214, 83, 226, 256);
+	clip-path: inset(0 0);
+	-webkit-clip-path: inset(0 0);
+	transition: 0.3s;
+}
+
+.big {
+	font-size: 3em;
+}
+
+.medium-big {
+	font-size: 1.5em;
+}
+
+.icon {
+	position: relative;
+}
+
+.icon.small {
+	font-size: 0.5em;
+}
+
+span.icon,
+a.icon {
+	display: inline-block;
+}
+
+.icon svg {
+	top: 0.125em !important;
+	width: 1em !important;
+	height: 1em !important;
+	position: relative;
+}
+
+.icon.baseline svg {
+	top: 0.125em !important;
+	position: relative;
+}
+
+@media (min-width: 500px) {
 	body {
 		font-size: 16px;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	body {
 		font-size: 12px;
+	}
+}
+
+@media (max-width: 56em) {
+	body {
+		background: #fafafa;
 	}
 }
