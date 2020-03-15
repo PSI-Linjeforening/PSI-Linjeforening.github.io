@@ -17,8 +17,8 @@ Brain region illustration: OpenStax College [Creative Commons Attribution 3.0 Un
 
 GitHub Authors:
 ===============
-- GitHub Action - action@github.com
 - Kristian - kristianint@outlook.com
+- GitHub Action - action@github.com
 
 
 Node Dependency Authors:
