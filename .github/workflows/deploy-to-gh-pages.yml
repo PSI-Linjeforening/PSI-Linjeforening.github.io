@@ -30,14 +30,14 @@ jobs:
                 run: sh ./credits.sh;
                     sh -c 'if ! git diff --exit-code static/credits.txt;
                     then
-                        echo "Credits have changed, pushing changes..."
-                        git add static/credits.txt
-                        git commit -m "auto update static/credits.txt"
-                        remote_repo="https://${{github.GITHUB_ACTOR}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.REPOSITORY}}.git"
-                        branch=default
-                        git push "${remote_repo}" HEAD:${branch}
+                        echo "Credits have changed, pushing changes...";
+                        git add static/credits.txt;
+                        git commit -m "auto update static/credits.txt";
+                        remote_repo="https://${{github.GITHUB_ACTOR}}:${{secrets.GITHUB_TOKEN}}@github.com/${{github.REPOSITORY}}.git";
+                        branch=default;
+                        git push "${remote_repo}" HEAD:${branch};
                     else
-                        echo "No changes to credits."
+                        echo "No changes to credits.";
                     fi'
             -
                 name: Build
