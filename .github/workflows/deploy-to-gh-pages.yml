@@ -18,6 +18,39 @@ jobs:
                 with:
                     ref: default
             -
+                name: Init checkout
+                uses: actions/checkout@v2
+                with:
+                    ref: default
+            -
+                name: Checkout code with tags
+                run: git fetch --prune --unshallow
+            -
+                name: Update credits.txt
+                run: sh ./credits.sh
+                    if ! git diff --exit-code static/credits.txt;
+                    then
+                        echo "Credits have changed, pushing changes..."
+                        git add static/credits.txt
+                        git commit -m "auto update static/credits.txt"
+                        remote_repo="https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
+                        branch=default
+                        git push "${remote_repo}" HEAD:${branch}
+                    else
+                        echo "No changes to credits."
+                    fi
+            -
+                name: Commit files
+                run: git commit -m "Add changes" -a
+                    git config --local user.email "action@github.com"
+                    git config --local user.name "GitHub Action"
+                    git commit -m "Add changes" -a
+            -
+                name: Push changes
+                uses: ad-m/github-push-action@master
+                with:
+                    github_token: ${{ secrets.GITHUB_TOKEN }}
+            -
                 name: Build
                 run: |
                     npm install
