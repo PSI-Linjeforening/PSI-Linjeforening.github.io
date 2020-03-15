@@ -24,4 +24,4 @@ git log --pretty="%an - %ae" | sort | uniq -c | sort -nr | awk '{$1="" "-"}1' >>
 
 # Add node credits
 printf "\n\nNode Dependency Authors:\n========================\n" >> static/credits.txt
-(npx creditstxt | sed 's/^/- /') >> static/credits.txt
+(npx creditstxt) >> static/credits.txt
