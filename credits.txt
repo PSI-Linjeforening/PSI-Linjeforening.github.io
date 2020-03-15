@@ -1,0 +1,24 @@
+Images:
+=======
+Rorschach background image: 
+- Author: Hermann Rorschach (died 1922) [Public Domain] - The tenth blot of the Rorschach inkblot test
+- Licence: Public Domain
+- Description: The tenth blot of the Rorschach inkblot test
+- Resource: https://en.wikipedia.org/wiki/File:Rorschach_blot_10.jpg [09.02.2020]
+- Modified: true
+
+Brain region illustration: OpenStax College [Creative Commons Attribution 3.0 Unported]
+- Author: OpenStax College
+- Licence: Creative Commons Attribution 3.0 Unported
+- Description: Brocas and Wernickes Areas
+- Resource: https://commons.wikimedia.org/wiki/File:1605_Brocas_and_Wernickes_Areas-02.jpg [09.02.2020]
+- Modified: true
+
+
+GitHub Authors:
+===============
+- Kristian - kristianint@outlook.com
+
+
+Node Dependency Authors:
+========================

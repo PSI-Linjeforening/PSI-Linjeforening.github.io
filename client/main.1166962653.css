@@ -1,7 +1,0 @@
-nav.svelte-4ex5rn{font-weight:350;padding:0 1em;padding-bottom:3em;background-color:rgb(159, 43, 226);background:linear-gradient(
-				rgba(159, 43, 226, 0.9) 20%,
-				rgba(207, 77, 207, 0.9)
-			),
-			center center / 105vw no-repeat url("/images/brain-mono.png");clip-path:ellipse(60% 80% at 50% 20%);-webkit-clip-path:ellipse(60% 80% at 50% 20%)}ul.svelte-4ex5rn{margin:0;padding:0;display:flex;justify-content:space-around;flex-flow:row}li.svelte-4ex5rn{display:block;text-transform:uppercase}a.svelte-4ex5rn{margin:1em 0.5em 0 0.5em;display:block;font-size:1.5em;color:ivory;position:relative}a.svelte-4ex5rn::after,.selected.svelte-4ex5rn::after{height:2px;background-color:rgba(255, 255, 255, 0.5)}.selected.svelte-4ex5rn::after{background-color:rgb(214, 83, 226)}@media(max-width: 800px){nav.svelte-4ex5rn{padding-bottom:1.5em}}
-main.svelte-1v6nfb3{position:relative;max-width:56em;background-color:#fafafa;box-shadow:0 0 3px 0px rgba(100, 100, 100, 0.4);border-radius:2.5px;padding:2em;margin:0.8em auto;box-sizing:border-box}@media(max-width: 56em){main.svelte-1v6nfb3{box-shadow:none;border-radius:0}}
-h1.svelte-11ldx7j,p.svelte-11ldx7j{margin:0 auto}h1.svelte-11ldx7j{font-size:2.8em;font-weight:700;margin:0 0 0.5em 0}p.svelte-11ldx7j{margin:1em auto}@media(min-width: 680px){h1.svelte-11ldx7j{font-size:4em}}
