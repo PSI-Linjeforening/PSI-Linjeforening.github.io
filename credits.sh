@@ -19,9 +19,9 @@ Brain region illustration: OpenStax College [Creative Commons Attribution 3.0 Un
 
 # Add GitHub authors, sorted by amount of commits
 printf "\n\nGitHub Authors:\n===============\n" >> static/credits.txt
-git log --pretty="%an - %ae" | sort -r | uniq -c | sort -n | awk '{$1="" "-"}1' >> static/credits.txt
+git log --pretty="%an - %ae" | sort | uniq -c | sort -nr | awk '{$1="" "-"}1' >> static/credits.txt
 
 
 # Add node credits
 printf "\n\nNode Dependency Authors:\n========================\n" >> static/credits.txt
-npx creditstxt | sed 's/^/- /' >> static/credits.txt
+(npx creditstxt | sed 's/^/- /') >> static/credits.txt
