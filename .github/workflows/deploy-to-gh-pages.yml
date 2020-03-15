@@ -28,7 +28,7 @@ jobs:
             -
                 name: Update credits.txt
                 run: sh ./credits.sh
-                    if ! git diff --exit-code static/credits.txt;
+                    sh -c 'if ! git diff --exit-code static/credits.txt;
                     then
                         echo "Credits have changed, pushing changes..."
                         git add static/credits.txt
@@ -38,7 +38,7 @@ jobs:
                         git push "${remote_repo}" HEAD:${branch}
                     else
                         echo "No changes to credits."
-                    fi
+                    fi'
             -
                 name: Commit files
                 run: git commit -m "Add changes" -a
