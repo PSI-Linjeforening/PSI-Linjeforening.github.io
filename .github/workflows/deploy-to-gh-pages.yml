@@ -27,8 +27,11 @@ jobs:
                 run: git fetch --prune --unshallow
             -
                 name: Update credits.txt
-                run: sh ./credits.sh;
-                    sh -c 'if ! git diff --exit-code static/credits.txt;
+                run: |
+                    git config --local user.email "action@github.com"
+                    git config --local user.name "GitHub Action"
+                    sh ./credits.sh
+                    sh -c 'if ! git diff --exit-code static/credits.txt
                     then
                         echo "Credits have changed, pushing changes...";
                         git add static/credits.txt;
