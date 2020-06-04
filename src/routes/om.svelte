@@ -49,11 +49,15 @@
 	</li>
 	<li>
 		<b>Eventansvarlig:</b>
-		Nora Sofie Trohaug
+		Cecilie Furfjord Pettersen
 	</li>
 	<li>
 		<b>Aktivitetsansvarlig:</b>
-		Stian Søreng
+		Dina Marie Wildhagen
+	</li>
+	<li>
+		<b>Fadderansvarlig:</b>
+		Nora Sofie Trohaug
 	</li>
 </ul>
 
