@@ -19,6 +19,7 @@ GitHub Authors:
 ===============
 - Kristian - kristianint@outlook.com
 - GitHub Action - action@github.com
+- Spagettigaling - fredrik-foshaugen@hotmail.com
 
 
 Node Dependency Authors:
