@@ -39,7 +39,7 @@ André Cruz: cross-spawn
 Antoine Motet: spdx-expression-parse
 Aseem Kishore: json5
 Ben Briggs: caniuse-lite
-Ben Newman: @babel/plugin-transform-regenerator, private, regenerator-runtime, regenerator-transform
+Ben Newman: @babel/plugin-transform-regenerator, regenerator-runtime, regenerator-transform
 Benjamin Tan: regjsgen
 Benjamin Toueg: @types/node
 Blake Embrey: camel-case, lower-case, no-case, param-case, upper-case
@@ -99,6 +99,7 @@ Jeremiah Senkpiel: compressible, mime-types
 Jmeas Smith: source-map
 John Gozde: source-map
 John-David Dalton: lodash
+Jon Schlinkert: picomatch
 Jonas Hermsmeier: http-link-header
 Jonathan Ong: accepts, compressible, compression, is-module, mime-db, mime-types
 Jordan Gensler: babel-plugin-dynamic-import-node
@@ -118,7 +119,7 @@ Kyle E. Mitchell: spdx-correct, spdx-exceptions, spdx-expression-parse, validate
 Kyle Uehlein: @types/node
 Lishude: @types/node
 Logan Smyth: @babel/helper-module-imports, @babel/helper-module-transforms, @babel/helper-plugin-utils, @babel/helper-simple-access, gensync
-Luke Edwards: @polka/url, polka, regexparam, sirv, trouter
+Luke Edwards: @polka/url, escalade, polka, regexparam, sirv, trouter
 Marcin Kopacz: @types/node
 Mario Nebl: @types/resolve
 Mariusz Wiktorczyk: @types/node
@@ -167,7 +168,7 @@ TJ Holowaychuk: bytes, commander, debug
 Tal Einat: spdx-correct
 Tan Li Hau: levenary
 Thanik Bhongbhibhat: @types/node
-The Babel Team: @babel/compat-data, @babel/helper-compilation-targets, @babel/helper-create-regexp-features-plugin
+The Babel Team: @babel/compat-data, @babel/helper-compilation-targets, @babel/helper-create-class-features-plugin, @babel/helper-create-regexp-features-plugin
 The Dark Sky Company: string-hash
 The Linux Foundation: spdx-exceptions
 Thiago de Arruda: has
